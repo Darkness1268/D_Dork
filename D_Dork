@@ -1,0 +1,23 @@
+try:
+    from googlesearch import search
+except ImportError:
+    print("No module named 'google' found")
+
+# to search
+print("""                                                                       
+
+\033[0;96m
+╔═══╗──╔╗────╔═══╗────╔╗\033[0;96m
+║╔═╗║─╔╝╚╗───╚╗╔╗║────║║
+║║─║╠╗╠╗╔╬══╗─║║║╠══╦═╣║╔╦══╦═╗
+║╚═╝║║║║║║╔╗║─║║║║╔╗║╔╣╚╝╣║═╣╔╝\033[1;35m
+║╔═╗║╚╝║╚╣╚╝║╔╝╚╝║╚╝║║║╔╗╣║═╣║\033[1;35m
+╚╝─╚╩══╩═╩══╝╚═══╩══╩╝╚╝╚╩══╩╝                        
+              \033[0;92m Coded by: Mr.Dark Hcktvst                                                                       """)
+print("\033[1;31;36m__________________________________________________________")
+print("\033[1;31;36m__________________________________________________________")
+print("")
+query = input("Enter your dork: ")
+print('')
+for j in search(query, tld="co.in", num=100, stop=100, pause=2):
+    print(j)
